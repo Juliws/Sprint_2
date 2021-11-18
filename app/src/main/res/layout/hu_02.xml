@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <!-- Top -->
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="411dp"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#E1E356"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/regresar_Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:srcCompat="@drawable/icons8_izquierda_en_c_rculo_2_64" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="315dp"
+            android:layout_height="37dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginBottom="18dp"
+            android:layout_toEndOf="@+id/regresar_Menu"
+            android:layout_toRightOf="@+id/regresar_Menu"
+            android:text="Buscador de Palabras Clave"
+            android:textColor="#0C0A0A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!-- Footer -->
+
+    <EditText
+        android:id="@+id/Input_02"
+        android:layout_width="273dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/Input_01"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="364dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="364dp"
+        android:text="Las palabras claves deben ir separadas por una coma ( , )"
+        android:textColor="#0C0A0A"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input_02"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="132dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="76dp"
+        android:text="Busqueda"
+        android:textColor="#090505"
+        app:backgroundTint="#C4C4C4"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="414dp"
+        android:layout_height="57dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#E1E356"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="191dp"
+            android:layout_height="22dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="115dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="108dp"
+            android:layout_marginRight="108dp"
+            android:layout_marginBottom="3dp"
+            android:text="Powered by Group 10 Cycle 4"
+            android:textColor="#0C0A0A" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="192dp"
+            android:layout_marginLeft="192dp"
+            android:layout_marginEnd="187dp"
+            android:layout_marginRight="187dp"
+            app:srcCompat="@drawable/icons8_busto_52" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+

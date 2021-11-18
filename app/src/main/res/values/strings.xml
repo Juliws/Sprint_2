@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Sprint_2</string>
+    <string name="Input_01">Ingrese palabras claves</string>
+    <string name="Input_02">Ingresa la etiqueta a buscar</string>
+</resources>
