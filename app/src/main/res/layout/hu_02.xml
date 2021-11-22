@@ -51,7 +51,7 @@
     <!-- Footer -->
 
     <EditText
-        android:id="@+id/Input_02"
+        android:id="@+id/txtInputSearch"
         android:layout_width="273dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
@@ -73,7 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Input_02"
+        app:layout_constraintTop_toBottomOf="@+id/txtInputSearch"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
