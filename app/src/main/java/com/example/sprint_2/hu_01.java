@@ -25,5 +25,7 @@ public class hu_01 extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
     }
 }
