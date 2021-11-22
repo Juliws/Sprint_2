@@ -1,5 +1,7 @@
 package com.example.sprint_2;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.regex.*;
 
 public class ValidacionCampos {
@@ -15,7 +17,17 @@ public class ValidacionCampos {
     }
 
     public boolean formEtiqueta(String keyTag){
+            int codAsci = 0;
 
-        return true;
+            boolean b = !(keyTag.length() == 0 || keyTag.length() < 2);
+            boolean a = true;
+
+            for (int i = 0; i < keyTag.length(); i++) {
+                codAsci = (int)keyTag.charAt(i);
+                if(codAsci < 48){
+                    a = false;
+                }
+            }
+            return b && a;
     }
 }
