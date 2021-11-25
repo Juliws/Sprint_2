@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#403D3D"
     tools:context=".MainMenu">
 
     <!-- Top -->
@@ -47,198 +48,142 @@
             app:srcCompat="@drawable/icons8_izquierda_en_c_rculo_2_64" />
     </RelativeLayout>
 
-    <!-- Footer -->
-
-    <RelativeLayout
-        android:id="@+id/square"
-        android:layout_width="367dp"
-        android:layout_height="363dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="152dp"
-        android:background="#D9D8DA"
-        app:layout_constraintBottom_toTopOf="@+id/footer"
+    <TextView
+        android:id="@+id/Tx_nombreLugar"
+        android:layout_width="123dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="92dp"
+        android:text="Nombre del Lugar"
+        android:textColor="#F8F5F5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
-            android:id="@+id/imageButton7"
-            android:layout_width="51dp"
-            android:layout_height="48dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="190dp"
-            android:layout_marginLeft="190dp"
-            android:layout_marginTop="98dp"
-            android:layout_marginEnd="18dp"
-            android:layout_marginRight="18dp"
-            android:layout_toEndOf="@+id/textView5"
-            android:layout_toRightOf="@+id/textView5"
-            app:srcCompat="@android:drawable/btn_dropdown"
-            tools:ignore="SpeakableTextPresentCheck" />
+    <EditText
+        android:id="@+id/Et_nonLugar"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tx_nombreLugar"
+        app:layout_constraintVertical_bias="0.008"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="88dp"
-            android:layout_height="38dp"
-            android:layout_above="@+id/textView5"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="30dp"
-            android:text="Nombre del Lugar"
-            android:textColor="#0C0A0A" />
+    <TextView
+        android:id="@+id/Tx_tipoPatrimonio"
+        android:layout_width="159dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:text="Tipo de Patrimonio"
+        android:textColor="#F8F5F5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_nonLugar" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="207dp"
-            android:layout_height="48dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="33dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_toEndOf="@+id/textView4"
-            android:layout_toRightOf="@+id/textView4"
-            android:ems="10"
-            android:inputType="textPersonName"
-            tools:ignore="SpeakableTextPresentCheck" />
+    <Spinner
+        android:id="@+id/hu_01_Spinner"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:dropDownWidth="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tx_tipoPatrimonio"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="88dp"
-            android:layout_height="36dp"
-            android:layout_above="@+id/textView6"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="30dp"
-            android:text="Tipo de Patrimonio"
-            android:textColor="#0C0A0A" />
+    <TextView
+        android:id="@+id/Tx_palabrasClave"
+        android:layout_width="199dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:text="Palabras claves relacionadas"
+        android:textColor="#F8F5F5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hu_01_Spinner" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName3"
-            android:layout_width="210dp"
-            android:layout_height="48dp"
-            android:layout_below="@+id/editTextTextPersonName2"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_toEndOf="@+id/textView5"
-            android:layout_toRightOf="@+id/textView5"
-            android:ems="10"
-            android:inputType="textPersonName"
-            tools:ignore="SpeakableTextPresentCheck" />
+    <EditText
+        android:id="@+id/Et_keyWord"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tx_palabrasClave"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="87dp"
-            android:layout_height="50dp"
-            android:layout_above="@+id/textView7"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="25dp"
-            android:text="Palabras claves relacionadas"
-            android:textColor="#0C0A0A" />
+    <TextView
+        android:id="@+id/Tx_etiquetasClave"
+        android:layout_width="121dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="8dp"
+        android:text="Etiquetas Claves"
+        android:textColor="#F8F5F5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_keyWord" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName4"
-            android:layout_width="210dp"
-            android:layout_height="48dp"
-            android:layout_below="@+id/editTextTextPersonName3"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="26dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_toEndOf="@+id/textView6"
-            android:layout_toRightOf="@+id/textView6"
-            android:ems="10"
-            android:inputType="textPersonName"
-            tools:ignore="SpeakableTextPresentCheck" />
+    <EditText
+        android:id="@+id/Et_clave"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tx_etiquetasClave"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="85dp"
-            android:layout_height="33dp"
-            android:layout_above="@+id/textView8"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginStart="21dp"
-            android:layout_marginLeft="21dp"
-            android:layout_marginBottom="36dp"
-            android:text="Etiquetas Claves"
-            android:textColor="#0C0A0A" />
+    <TextView
+        android:id="@+id/Tx_ubicacion"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ubicación"
+        android:textColor="#F8F5F5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_clave" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName5"
-            android:layout_width="211dp"
-            android:layout_height="48dp"
-            android:layout_below="@+id/editTextTextPersonName4"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="14dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_toEndOf="@+id/textView7"
-            android:layout_toRightOf="@+id/textView7"
-            android:ems="10"
-            android:inputType="textPersonName"
-            tools:ignore="SpeakableTextPresentCheck" />
+    <EditText
+        android:id="@+id/Et_ubicacion"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tx_ubicacion"
+        app:layout_constraintVertical_bias="0.013"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="85dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="30dp"
-            android:text="Ubicación"
-            android:textColor="#0C0A0A" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="209dp"
-            android:layout_height="48dp"
-            android:layout_below="@+id/editTextTextPersonName5"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_toEndOf="@+id/textView8"
-            android:layout_toRightOf="@+id/textView8"
-            android:ems="10"
-            android:inputType="textPersonName"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-    </RelativeLayout>
+    <Button
+        android:id="@+id/Bt_guardarReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:text="Guardar"
+        android:textColor="#0E0D0D"
+        app:backgroundTint="#E1E356"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_ubicacion"
+        app:layout_constraintVertical_bias="0.736" />
 
     <RelativeLayout
         android:id="@+id/footer"
@@ -250,6 +195,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Footer -->
 
         <TextView
             android:id="@+id/textView3"

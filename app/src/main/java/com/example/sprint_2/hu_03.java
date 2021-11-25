@@ -23,13 +23,12 @@ public class hu_03 extends AppCompatActivity{
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(hu_03.this, MainMenu.class);
-                startActivity(i);
+                Intent k= new Intent(hu_03.this, MainMenu.class);
+                startActivity(k);
             }
         });
 
-
-// start implementation - Pendiente modificación de la instancia de la clase...
+// start implementation
 
         EditText txtLabelSearch = (EditText) findViewById(R.id.txtInputSearch3);
         Button btSearch;

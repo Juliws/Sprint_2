@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#403D3D"
     tools:context=".MainMenu">
 
     <!-- Top -->
@@ -51,39 +52,38 @@
     <!-- Footer -->
 
     <EditText
-        android:id="@+id/txtInputSearch"
-        android:layout_width="273dp"
+        android:id="@+id/txtInputSearch2"
+        android:layout_width="331dp"
         android:layout_height="48dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:hint="@string/Input_01"
         android:inputType="textPersonName"
+        android:textColor="#F8F5F5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top" />
+        app:layout_constraintTop_toTopOf="@+id/top" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/Tx_nombreLugar"
         android:layout_width="364dp"
         android:layout_height="31dp"
-        android:layout_marginBottom="364dp"
+        android:layout_marginTop="12dp"
         android:text="Las palabras claves deben ir separadas por una coma ( , )"
-        android:textColor="#0C0A0A"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        android:textColor="#FAF7F7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtInputSearch"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/txtInputSearch2" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/Bt_busqueda"
         android:layout_width="132dp"
         android:layout_height="48dp"
         android:layout_marginBottom="76dp"
         android:text="Busqueda"
         android:textColor="#090505"
-        app:backgroundTint="#C4C4C4"
+        app:backgroundTint="#E1E356"
         app:layout_constraintBottom_toTopOf="@+id/footer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
