@@ -1,7 +1,5 @@
 package com.example.sprint_2;
 
-import java.util.Locale;
-
 public class DataProcess {
 
     private int nroCons = 1002;
