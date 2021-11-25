@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opciones_spinner_hu_01">
+        <item>Selecciona</item>
+        <item>Patrimonio Mueble</item>
+        <item>Patrimonio Inmueble</item>
+
+    </string-array>
+
+</resources>

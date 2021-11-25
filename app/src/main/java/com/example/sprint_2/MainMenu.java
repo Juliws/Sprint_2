@@ -16,7 +16,6 @@ public class MainMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_menu);
         hu_01 = (Button)findViewById(R.id.Op_01);
-
         hu_01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,7 +24,7 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
-        hu_02 = (Button)findViewById(R.id.Op_02);
+        hu_02=(Button)findViewById(R.id.Op_02);
         hu_02.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
