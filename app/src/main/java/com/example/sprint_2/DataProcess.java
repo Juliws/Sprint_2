@@ -4,20 +4,28 @@ import java.util.Locale;
 
 public class DataProcess {
 
+    private int nroCons = 1002;
+
     public String generadorEtiqueta(String nombreLugar, String tipoPatrimonio){
-        nombreLugar.toUpperCase(Locale.ROOT);
 
+        String lugar = nombreLugar.toUpperCase();
         String etiqueta=null;
-        int consecutivo1=1002;
 
+        lugar = lugar.substring(0, 3);
 
-        if(tipoPatrimonio == "Patrimonio Mueble"){
-            etiqueta= nombreLugar+" PM "+consecutivo1;
-            consecutivo1=consecutivo1+1;
-        }else{
-            etiqueta=nombreLugar+" PI "+consecutivo1;
+        if (tipoPatrimonio.isEmpty() || nombreLugar.isEmpty()){
+            return "Tiene campos vacíos";
+            }else{
+
+                if(tipoPatrimonio == "Patrimonio Mueble"){
+                    etiqueta=lugar+"PM"+String.valueOf(nroCons);
+
+                }else{
+                    etiqueta=lugar+"PI"+String.valueOf(nroCons);
+                }
+                nroCons = nroCons + 1;
+                return etiqueta;
         }
-        return etiqueta;
     }
 
     public int contadorKeyWord(String keyWords){
